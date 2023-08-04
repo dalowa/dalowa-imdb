@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import Providers from "./Providers";
+import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "dalowa - IMDb",
@@ -22,6 +23,7 @@ export default function RootLayout({
             {/* Header */}
             <Header />
             {/* NavBar */}
+            <NavBar />
             {/* SearchBox */}
             {children}
           </>
